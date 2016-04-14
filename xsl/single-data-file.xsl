@@ -8,22 +8,16 @@
 	xmlns:ouc="http://omniupdate.com/XSL/Variables"
 	exclude-result-prefixes="ou xsl xs fn ouc">
 	
-	<xsl:import href="../common.xsl"/>
+	<xsl:param name="ou:site"/>
+	<xsl:param name="ou:path"/>
 	
 	<xsl:template match="/document">
 		<html lang="en">
 			
 			<head>
 				<link href="//netdna.bootstrapcdn.com/bootswatch/3.1.0/cerulean/bootstrap.min.css" rel="stylesheet"/>
-				<link href="/_resources/css/oustaging.css" rel="stylesheet" />
-				<style>
-					body{
-					font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-					}
-					.ox-regioneditbutton {
-					display: none;
-					}
-					
+				<style>				
+					.ox-regioneditbutton { display: none;}
 					tr {border-bottom:1px solid #EBEBEB}
 					tr td {padding:4px 0;}
 				</style>
@@ -35,8 +29,7 @@
 					<h1>Library Database</h1>
 					<div class="alert alert-warning">
 						<p><strong>Data File:</strong> This file does not need to be published, however the pages that pull data from this file do.</p>
-					</div>
-					
+					</div>					
 					
 					<table width="100%">
 						<thead>
