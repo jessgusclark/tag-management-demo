@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?pcf-stylesheet path="../xsl/single-data-file.xsl" title="Library Database" extension="html"?>
+<?pcf-stylesheet path="/xsl/data-file.xsl" title="Library Database" extension="html"?>
 
 <!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd"> 
 
 <document xmlns:ouc="http://omniupdate.com/XSL/Variables">
 	<ouc:info><tcf>section.tcf</tcf><tmpl>properties.tmpl</tmpl></ouc:info>
-	
+
 	<page type="library-database"/>
-	
+
 	<ouc:properties label="config">
-		<parameter section="Database Information" name="database-name" type="text" group="Everyone" prompt="Database Name" ></parameter>
-		<parameter name="database-description" type="text" group="Everyone" prompt="Description" ></parameter>
-		<parameter name="database-url" type="text" group="Everyone" prompt="URL" ></parameter>
-		
+		<parameter section="Database Information" name="database-name" type="text" group="Everyone" prompt="Database Name" >Accounting Journal</parameter>
+		<parameter name="database-description" type="text" group="Everyone" prompt="Description" >This is an academic journal that has articles about accounting.</parameter>
+		<parameter name="database-url" type="text" group="Everyone" prompt="URL" >http://www.google.com/</parameter>
+
 		<parameter section="Extra Info - All optional" name="extra-access" type="text" group="Everyone" prompt="Access"></parameter>
 		<parameter name="extra-content" type="text" group="Everyone" prompt="Content"></parameter>
 		<parameter name="extra-coverage" type="text" group="Everyone" prompt="Coverage"></parameter>
-		<parameter name="extra-users" type="text" group="Everyone" prompt="Simultaneous Users"></parameter>
+		<parameter name="extra-users" type="text" group="Everyone" prompt="Simultaneous Users">10</parameter>
 		<parameter name="extra-vendor" type="text" group="Everyone" prompt="Vendor"></parameter>
-		
+
 		<parameter section="Active" name="props" type="select" group="Everyone" prompt="Active">
 			<option value="yes" selected="true">Yes</option>
 			<option value="no" selected="false">No</option>
 		</parameter>
-		
+
 	</ouc:properties>
-	
+
 </document>
