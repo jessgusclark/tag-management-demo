@@ -61,8 +61,10 @@
 					<h3>Tags:</h3>
 					<p>Tags are used for 'subject' and 'resource type' sorting.</p>
 					<ul>
-						
-					<xsl:for-each select="doc( concat('ou:/Tag/GetTags?', 'site=', $ou:site, '&amp;path=', replace($ou:path, '.html', '.pcf') ) )/tags/tag">
+					
+                    <xsl:variable name="page-path" select="replace($ou:path, '.html', '.pcf')" />
+                    
+					<xsl:for-each select="doc( concat('ou:/Tag/GetTags?', 'site=', $ou:site, '&amp;path=', $page-path ) )/tags/tag">
 						<li><xsl:value-of select="name" /></li>
 					</xsl:for-each>
 					</ul>
