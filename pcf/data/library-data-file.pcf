@@ -19,9 +19,9 @@
 		<parameter name="extra-users" type="text" group="Everyone" prompt="Simultaneous Users">10</parameter>
 		<parameter name="extra-vendor" type="text" group="Everyone" prompt="Vendor"></parameter>
 
-		<parameter section="Active" name="props" type="select" group="Everyone" prompt="Active">
-			<option value="yes" selected="true">Yes</option>
-			<option value="no" selected="false">No</option>
+		<parameter section="Active" name="active" type="select" group="Everyone" prompt="Active">
+			<option value="yes" selected="true">True</option>
+			<option value="no" selected="false">False</option>
 		</parameter>
 
 	</ouc:properties>

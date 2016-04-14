@@ -64,11 +64,15 @@
 		<!-- Only pull in data files -->
 		<xsl:if test="$page-content/page/@type = 'library-database'">
 		
-			<h2><xsl:value-of select="$page-content/ouc:properties[@label='config']/parameter[@name='database-name']" /></h2>
-			<p><xsl:value-of select="$page-content/ouc:properties[@label='config']/parameter[@name='database-description']" /></p>
-			<a href="{$page-content/ouc:properties[@label='config']/parameter[@name='database-url']}">Open Database</a>
-			<hr/>
+			<!-- Check to see if the data file is set to 'active' -->
+			<xsl:if test="$page-content/ouc:properties[@label='config']/parameter[@name='active']/option[@selected='true'] = 'True'">
 
+				<h2><xsl:value-of select="$page-content/ouc:properties[@label='config']/parameter[@name='database-name']" /></h2>
+				<p><xsl:value-of select="$page-content/ouc:properties[@label='config']/parameter[@name='database-description']" /></p>
+				<a href="{$page-content/ouc:properties[@label='config']/parameter[@name='database-url']}">Open Database</a>
+				<hr/>
+
+			</xsl:if>
 		</xsl:if>
 		
 	</xsl:template>
