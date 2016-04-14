@@ -13,12 +13,6 @@
 		<parameter name="database-description" type="text" group="Everyone" prompt="Description" >This is an academic journal that has articles about accounting.</parameter>
 		<parameter name="database-url" type="text" group="Everyone" prompt="URL" >http://www.google.com/</parameter>
 
-		<parameter section="Extra Info - All optional" name="extra-access" type="text" group="Everyone" prompt="Access"></parameter>
-		<parameter name="extra-content" type="text" group="Everyone" prompt="Content"></parameter>
-		<parameter name="extra-coverage" type="text" group="Everyone" prompt="Coverage"></parameter>
-		<parameter name="extra-users" type="text" group="Everyone" prompt="Simultaneous Users">10</parameter>
-		<parameter name="extra-vendor" type="text" group="Everyone" prompt="Vendor"></parameter>
-
 		<parameter section="Active" name="active" type="select" group="Everyone" prompt="Active">
 			<option value="yes" selected="true">True</option>
 			<option value="no" selected="false">False</option>
