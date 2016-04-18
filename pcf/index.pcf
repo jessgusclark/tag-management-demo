@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?pcf-stylesheet path="/xsl/az-listing.xsl" title="Library Database" extension="html"?>
+
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd"> 
+
+<document xmlns:ouc="http://omniupdate.com/XSL/Variables">
+	<ouc:info><tcf>section.tcf</tcf><tmpl>properties.tmpl</tmpl></ouc:info>
+	
+	<ouc:properties label="metadata">
+		<title>Academic Journals</title>
+		<meta name="Description" content="" />
+		<meta name="Keywords" content="" />
+	</ouc:properties>
+	
+</document>
