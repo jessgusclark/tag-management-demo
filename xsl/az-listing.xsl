@@ -34,7 +34,7 @@
 	<xsl:template name="GetAllJournals">
 		
 		<!-- static folder to look for data files: -->
-		<xsl:variable name="data-folder" select="'/jesse/data-file-demo/data'" />
+		<xsl:variable name="data-folder" select="'/pcf/data'" />
 		<xsl:variable name="data-location" select="concat($ou:root, $ou:site, $data-folder)" />
 		
 		
